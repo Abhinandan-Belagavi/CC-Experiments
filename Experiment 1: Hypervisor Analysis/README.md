@@ -451,7 +451,7 @@ sysbench cpu --cpu-max-prime=20000 run
 
 # 15. Author
 
-**Name:** Shreenidhi Dharwad
+**Name:** Abhinandan S Belagavi
 
 **Course:** Cloud Computing
 
