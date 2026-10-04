@@ -30,8 +30,8 @@ The experiment uses **Proxmox VE** as the Type-1 hypervisor and **VMware Worksta
 
 ### Software
 
-| Software | Purpose |
-|----------|---------|
+| **Software** | **Purpose** |
+|---|---|
 | Proxmox VE | Type-1 Hypervisor |
 | VMware Workstation | Type-2 Hypervisor |
 | Ubuntu | Guest Operating System |
@@ -39,7 +39,7 @@ The experiment uses **Proxmox VE** as the Type-1 hypervisor and **VMware Worksta
 
 ---
 
-# 4. Introduction to Hypervisors
+## 4. Introduction to Hypervisors
 
 A **hypervisor** is a software layer that enables multiple virtual machines to share the resources of a physical computer.
 
