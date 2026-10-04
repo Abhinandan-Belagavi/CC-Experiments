@@ -34,6 +34,7 @@ This experiment compares both approaches using measurable system and application
 
 The experiment consists of two execution environments:
 
+```text
                      VM vs Container
                            │
             ┌──────────────┴──────────────┐
@@ -59,9 +60,10 @@ The experiment consists of two execution environments:
                 ┌──────────┴──────────┐
                 │                     │
              VM Result          Container Result
-
+```
 
 ### Application-Level Architecture
+```
                      Client
                        │
                        ▼
@@ -76,10 +78,9 @@ The experiment consists of two execution environments:
    Service Response          Computation Result
 
 
-
 The same experimental idea is used to observe how virtualization and containerization affect system and application performance.
 
----
+```
 
 ## 5. Experimental Environment
 
@@ -501,44 +502,41 @@ The experiment provides a practical comparison of VM-based and container-based e
 
 ## 19. Repository Structure
 
-
+```text
 02-VM-Container-Performance/
 │
 ├── README.md
 │
 ├── screenshots/
-│ ├── 01-docker-hello-world.png
-│ ├── 02-lscpu-system-info.png
-│ ├── 03-memory-and-storage-info.png
-│ ├── 04-disk-and-docker-info.png
-│ ├── 05-vm-configuration.png
-│ ├── 06-docker-configuration.png
-│ ├── 07-baseline-cpu-sysbench.png
-│ ├── 08-benchmark-dockerfile.png
-│ ├── 09-benchmark-docker-image.png
-│ ├── 10-container-tools-verification.png
-│ ├── 11-vm-cpu-result.png
-│ ├── 12-container-cpu-result.png
-│ ├── 13-container-memory-result.png
-│ ├── 14-vm-disk-results.png
-│ ├── 15-container-disk-results.png
-│ ├── 16-vm-network-iperf3.png
-│ ├── 17-container-network-iperf3.png
-│ ├── 18-fastapi-health.png
-│ ├── 19-fastapi-compute.png
-│ ├── 20-fastapi-container-running.png
-│ └── 21-container-fastapi-endpoints.png
+│   ├── 01-docker-hello-world.png
+│   ├── 02-lscpu-system-info.png
+│   ├── 03-memory-and-storage-info.png
+│   ├── 04-disk-and-docker-info.png
+│   ├── 05-vm-configuration.png
+│   ├── 06-docker-configuration.png
+│   ├── 07-baseline-cpu-sysbench.png
+│   ├── 08-benchmark-dockerfile.png
+│   ├── 09-benchmark-docker-image.png
+│   ├── 10-container-tools-verification.png
+│   ├── 11-vm-cpu-result.png
+│   ├── 12-container-cpu-result.png
+│   ├── 13-container-memory-result.png
+│   ├── 14-vm-disk-results.png
+│   ├── 15-container-disk-results.png
+│   ├── 16-vm-network-iperf3.png
+│   ├── 17-container-network-iperf3.png
+│   ├── 18-fastapi-health.png
+│   ├── 19-fastapi-compute.png
+│   ├── 20-fastapi-container-running.png
+│   └── 21-container-fastapi-endpoints.png
 │
 └── results/
-├── figures/
-├── data/
-└── scripts/
-
-
----
+    ├── figures/
+    ├── data/
+    └── scripts/
+```
 
 ## 20. Final Experimental Workflow
-
 
 SYSTEM SETUP
 ↓
@@ -626,7 +624,6 @@ The graph-generation script is stored in:
 **Institution:** KLE Technological University
 
 **Academic Year:** 2026
-
 
 
 
