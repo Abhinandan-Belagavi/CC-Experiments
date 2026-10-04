@@ -591,19 +591,25 @@ The completed experiment contains:
 
 The CPU benchmark results obtained from the VM and container environments are shown below.
 
-[CPU Performance Comparison](https://github.com/Abhinandan-Belagavi/CC-Experiments/blob/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/01-cpu-comparison.png) ([image](https://github.com/Abhinandan-Belagavi/CC-Experiments/raw/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/01-cpu-comparison.png))
+[CPU Performance Comparison](https://github.com/Abhinandan-Belagavi/CC-Experiments/blob/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/01-cpu-comparison.png)
+
+![CPU Performance Comparison](https://github.com/Abhinandan-Belagavi/CC-Experiments/raw/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/01-cpu-comparison.png)
 
 ### Network Throughput
 
 The network throughput measured using `iperf3` is compared below.
 
-[Network Throughput Comparison](https://github.com/Abhinandan-Belagavi/CC-Experiments/blob/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/02-network-comparison.png) ([image](https://github.com/Abhinandan-Belagavi/CC-Experiments/raw/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/02-network-comparison.png))
+[Network Throughput Comparison](https://github.com/Abhinandan-Belagavi/CC-Experiments/blob/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/02-network-comparison.png)
+
+![Network Throughput Comparison](https://github.com/Abhinandan-Belagavi/CC-Experiments/raw/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/02-network-comparison.png)
 
 ### Container Memory Performance
 
 The measured container memory performance is shown below.
 
-[Container Memory Performance](https://github.com/Abhinandan-Belagavi/CC-Experiments/blob/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/03-container-memory-performance.png) ([image](https://github.com/Abhinandan-Belagavi/CC-Experiments/raw/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/03-container-memory-performance.png))
+[Container Memory Performance](https://github.com/Abhinandan-Belagavi/CC-Experiments/blob/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/03-container-memory-performance.png)
+
+![Container Memory Performance](https://github.com/Abhinandan-Belagavi/CC-Experiments/raw/main/Experiment%202%20%E2%80%94%20VM%20vs%20Container%20Performance%20Analysis/results/figures/03-container-memory-performance.png)
 
 ### Benchmark Data
 
