@@ -76,6 +76,7 @@ The experiment consists of two execution environments:
    Service Response          Computation Result
 
 
+
 The same experimental idea is used to observe how virtualization and containerization affect system and application performance.
 
 ---
@@ -249,8 +250,18 @@ The experiment evaluates the following performance parameters:
    │                 │                 │
   CPU              Memory             Disk
    │                 │                 │
+   │                 │                 │
+   └─────────────────┼─────────────────┘
+                     │
+                  Network
+                     │
+                   iperf3
+                     │
+               Application Test
+                     │
+                  FastAPI
 
-   
+
 ---
 
 ## 9. CPU Performance
@@ -279,8 +290,14 @@ The container was restricted to approximately 512 MB of memory.
 This demonstrates how containers can be given explicit resource limits using Docker.
 
 ### Memory Configuration
+Container Memory Limit = 512 MB
+
 
 The measured result is available in:
+
+
+screenshots/13-container-memory-result.png
+
 
 ---
 
@@ -291,6 +308,25 @@ Disk performance was evaluated using `fio`.
 The experiment included both sequential and random operations.
 
 ### Operations Tested
+
+
+Sequential Read
+Sequential Write
+Random Read
+Random Write
+
+
+VM results:
+
+
+screenshots/14-vm-disk-results.png
+
+
+Container results:
+
+
+screenshots/15-container-disk-results.png
+
 
 These measurements provide a basis for comparing storage I/O behavior in the two environments.
 
@@ -306,9 +342,17 @@ The VM network test was performed separately from the container network test.
 
 The measured VM network throughput was approximately:
 
+
+64–66 Gbit/s
+
+
 ### Container Network Test
 
 The final container network test produced approximately:
+
+
+64.8 Gbit/s
+
 
 Evidence:
 
@@ -457,9 +501,69 @@ The experiment provides a practical comparison of VM-based and container-based e
 
 ## 19. Repository Structure
 
+
+02-VM-Container-Performance/
+│
+├── README.md
+│
+├── screenshots/
+│ ├── 01-docker-hello-world.png
+│ ├── 02-lscpu-system-info.png
+│ ├── 03-memory-and-storage-info.png
+│ ├── 04-disk-and-docker-info.png
+│ ├── 05-vm-configuration.png
+│ ├── 06-docker-configuration.png
+│ ├── 07-baseline-cpu-sysbench.png
+│ ├── 08-benchmark-dockerfile.png
+│ ├── 09-benchmark-docker-image.png
+│ ├── 10-container-tools-verification.png
+│ ├── 11-vm-cpu-result.png
+│ ├── 12-container-cpu-result.png
+│ ├── 13-container-memory-result.png
+│ ├── 14-vm-disk-results.png
+│ ├── 15-container-disk-results.png
+│ ├── 16-vm-network-iperf3.png
+│ ├── 17-container-network-iperf3.png
+│ ├── 18-fastapi-health.png
+│ ├── 19-fastapi-compute.png
+│ ├── 20-fastapi-container-running.png
+│ └── 21-container-fastapi-endpoints.png
+│
+└── results/
+├── figures/
+├── data/
+└── scripts/
+
+
 ---
 
 ## 20. Final Experimental Workflow
+
+
+SYSTEM SETUP
+↓
+VM CONFIGURATION
+↓
+DOCKER CONFIGURATION
+↓
+CONTAINER CREATION
+↓
+CPU BENCHMARK
+↓
+MEMORY BENCHMARK
+↓
+DISK I/O BENCHMARK
+↓
+NETWORK BENCHMARK
+↓
+FASTAPI APPLICATION TEST
+↓
+RESULT COLLECTION
+↓
+PERFORMANCE ANALYSIS
+↓
+CONCLUSION
+
 
 ---
 
@@ -522,3 +626,9 @@ The graph-generation script is stored in:
 **Institution:** KLE Technological University
 
 **Academic Year:** 2026
+
+
+
+
+
+             
