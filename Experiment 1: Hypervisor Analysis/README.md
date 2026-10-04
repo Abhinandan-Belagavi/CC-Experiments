@@ -30,20 +30,20 @@ The experiment uses **Proxmox VE** as the Type-1 hypervisor and **VMware Worksta
 
 ### Software
 
-| **Software** | **Purpose** |
-|---|---|
-| Proxmox VE | Type-1 Hypervisor |
-| VMware Workstation | Type-2 Hypervisor |
-| Ubuntu | Guest Operating System |
-| Sysbench | CPU Benchmarking |
+| **Software**       | **Purpose**            |
+| ------------------ | ---------------------- |
+| Proxmox VE         | Type-1 Hypervisor      |
+| VMware Workstation | Type-2 Hypervisor      |
+| Ubuntu             | Guest Operating System |
+| Sysbench           | CPU Benchmarking       |
 
 ---
 
-## 4. Introduction to Hypervisors
+# 4. Introduction to Hypervisors
 
 A **hypervisor** is a software layer that enables multiple virtual machines to share the resources of a physical computer.
 
-Hypervisors are broadly classified into two types.
+Hypervisors are broadly classified into two types:
 
 ### Type-1 Hypervisor
 
@@ -64,13 +64,24 @@ A Type-2 hypervisor runs as an application on top of a host operating system and
 ## 5.1 Type-1 Hypervisor Architecture
 
 ```text
-Physical Hardware
-        ↓
-    Proxmox VE
-  (Type-1 Hypervisor)
-        ↓
-   Virtual Machine
-        ↓
-    Ubuntu OS
-        ↓
-Applications / Benchmark
+┌──────────────────────────────┐
+│      Physical Hardware       │
+│   CPU | RAM | Storage | NIC  │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│         Proxmox VE           │
+│      Type-1 Hypervisor       │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│       Virtual Machine        │
+│          Ubuntu OS           │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│ Applications / Sysbench      │
+└──────────────────────────────┘
